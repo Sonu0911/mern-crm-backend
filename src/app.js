@@ -5,8 +5,12 @@ const cookieParser = require('cookie-parser');
 
 const app = express();
 
+// app.use(cors({ 
+//   origin: ['http://localhost:5173', 'https://mern-crm-frontend.vercel.app'], 
+//   credentials: true 
+// }));
 app.use(cors({ 
-  origin: ['http://localhost:5173', 'https://mern-crm-frontend.vercel.app'], 
+  origin: ['http://localhost:5173', 'mern-crm-frontend-chi.vercel.app'], 
   credentials: true 
 }));
 app.use(express.json());
